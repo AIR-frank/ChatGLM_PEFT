@@ -5,7 +5,7 @@
 安装环境
 
 ```bash
-pip install protobuf transformers==4.30.2 cpm_kernels torch>=2.0 gradio mdtex2html sentencepiece accelerate
+pip install protobuf transformers==4.30.2 cpm_kernels torch>=2.0 gradio mdtex2html sentencepiece accelerate peft jieba nltk rouge_chinese
 ```
 
 #### 推理

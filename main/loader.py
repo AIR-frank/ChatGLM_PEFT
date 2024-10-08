@@ -51,7 +51,7 @@ class AutoDataloader():
     max_length: int; the length of the padding
     '''
 
-    def __init__(self, tokenizer, config, loader_name='ChatGLM_LoRA', data_path="Boss", data_present_path="./data/present.json", max_length=50):
+    def __init__(self, tokenizer, config, loader_name='ChatGLM_LoRA', data_path="Boss", data_present_path="/root/code/ChatGLM_PEFT/main/data/present.json", max_length=50):
         self.tokenizer = tokenizer
         self.loader_name = loader_name
         self.max_length = max_length

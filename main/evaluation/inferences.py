@@ -20,7 +20,7 @@ def inference_with_data_path(data_path, batcher, save_path, batch_size=1, skip=-
     - `params`: `eval_mode`: str, eval_mode is the mode of the inference, which is defined in `./data/present.json`.
     - `return`: `result`: list, result is the inference result.
     '''
-    data_present = get_data_present('./data/present.json')
+    data_present = get_data_present('/root/code/ChatGLM_PEFT/main/data/present.json')
     file_name = data_present[data_path][eval_mode]
     with open(file_name, 'r') as f:
         lines = f.readlines()

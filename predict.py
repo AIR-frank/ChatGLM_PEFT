@@ -8,6 +8,6 @@ pred = Predictor(model_from_pretrained='/root/model/chatglm3-6b/', resume_path='
 def batcher(item):
     return pred(**item, max_length=3200, temperature=0, build_message=True)
 
-inference_with_data_path(data_path='qa_dataset', batcher=batcher, save_path='./outputs.txt', batch_size=4)
+inference_with_data_path(data_path='qa_dataset', batcher=batcher, save_path='./output.txt', batch_size=32)
 
 # 若你希望能够自行喂入数据, 也可以使用inference_with_data, 注意每一条格式为{"query": "", "history": []}

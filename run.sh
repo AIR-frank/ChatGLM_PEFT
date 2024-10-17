@@ -1,1 +1,1 @@
-accelerate launch run_chatglm_lora.py --num_processes=2 
+python run_chatglm_lora.py

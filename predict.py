@@ -3,7 +3,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 from main.evaluation.inferences import inference_with_data_path
 from main.predictor.chatglm_lora import Predictor
 # /root/code/ChatGLM_PEFT/save_model/qa_dataset/ChatGLM_175746/
-pred = Predictor(model_from_pretrained='/root/model/chatglm3-6b/', resume_path='./save_model/qa_dataset/ChatGLM_175746/')
+pred = Predictor(model_from_pretrained='/root/model/chatglm3-6b/', resume_path='./save_model/qa_dataset/ChatGLM_1111122/')
 
 def batcher(item):
     return pred(**item, max_length=3200, temperature=0, build_message=True)

@@ -1,1 +1,1 @@
-python hotpot_evaluate_v1.py /root/code/ChatGLM_PEFT/main/data/sample_dev_pred.json /root/code/ChatGLM_PEFT/main/data/hotpot_dev_distractor_v1.json
+python hotpot_evaluate_v1.py /root/code/ChatGLM_PEFT/main/data/te.json /root/code/ChatGLM_PEFT/main/data/hotpot_dev_distractor_v1.json
